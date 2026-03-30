@@ -1,0 +1,111 @@
+/* 1. Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* 2. Global Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #1a1a1a; /* Strict monochrome: Dark grey/black text */
+    background-color: #ffffff; /* Strict monochrome: White background */
+    line-height: 1.6;
+    padding: 60px 20px; 
+    max-width: 800px; /* Keeps the layout contained to a single readable column */
+    margin: 0 auto; /* Centers the content on the screen */
+}
+
+/* 3. Typography Rules */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #555555; /* Slightly lighter grey to establish hierarchy */
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    max-width: 65ch; /* Enforces the maximum line length for readability */
+    margin-bottom: 1.5rem;
+}
+
+/* 4. Link Styles (The Single Accent Color) */
+a {
+    color: #0056b3; /* High-contrast blue accent color */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 5. List Styles */
+ul {
+    list-style-type: none; /* Removes default bullets for contact links */
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+/* Horizontal layout for the contact links */
+header ul, footer ul {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap; 
+}
+
+/* Brings standard bullets back specifically for the project details */
+.project-card ul {
+    list-style-type: disc; 
+    padding-left: 1.5rem;
+}
+
+.project-card li {
+    margin-bottom: 0.5rem;
+}
+
+/* 6. Spacing Rules */
+header#hero,
+main#projects,
+footer#contact {
+    margin-bottom: 80px; /* The mandatory empty gap separating major sections */
+}
+
+.project-card {
+    margin-bottom: 50px; /* Spacing between individual projects */
+}
+
+.project-card:last-child {
+    margin-bottom: 0;
+}
+
+/* 7. Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 40px 15px; /* Reduces padding slightly for smaller screens */
+    }
+    
+    h1 {
+        font-size: 2rem; /* Scales down the main header for mobile */
+    }
+
+    header#hero,
+    main#projects,
+    footer#contact {
+        margin-bottom: 60px; /* Adjusts the section gaps for mobile screens */
+    }
+}
