@@ -10,15 +10,14 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    color: #1a1a1a; /* Strict monochrome: Dark grey/black text */
-    background-color: #ffffff; /* Strict monochrome: White background */
+    color: #1a1a1a; 
+    background-color: #ffffff; 
     line-height: 1.6;
     padding: 60px 20px; 
-    max-width: 800px; /* Keeps the layout contained to a single readable column */
-    margin: 0 auto; /* Centers the content on the screen */
+    max-width: 800px; 
+    margin: 0 auto; 
 }
 
-/* 3. Typography Rules */
 h1 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -28,7 +27,7 @@ h1 {
 h2 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #555555; /* Slightly lighter grey to establish hierarchy */
+    color: #555555; 
     margin-bottom: 1rem;
 }
 
@@ -39,13 +38,12 @@ h3 {
 }
 
 p {
-    max-width: 65ch; /* Enforces the maximum line length for readability */
+    max-width: 65ch; 
     margin-bottom: 1.5rem;
 }
 
-/* 4. Link Styles (The Single Accent Color) */
 a {
-    color: #0056b3; /* High-contrast blue accent color */
+    color: #0056b3;
     text-decoration: none;
     font-weight: 600;
 }
@@ -54,21 +52,21 @@ a:hover {
     text-decoration: underline;
 }
 
-/* 5. List Styles */
+
 ul {
-    list-style-type: none; /* Removes default bullets for contact links */
+    list-style-type: none; 
     padding-left: 0;
     margin-bottom: 1.5rem;
 }
 
-/* Horizontal layout for the contact links */
+
 header ul, footer ul {
     display: flex;
     gap: 1.5rem;
     flex-wrap: wrap; 
 }
 
-/* Brings standard bullets back specifically for the project details */
+
 .project-card ul {
     list-style-type: disc; 
     padding-left: 1.5rem;
@@ -82,30 +80,29 @@ header ul, footer ul {
 header#hero,
 main#projects,
 footer#contact {
-    margin-bottom: 80px; /* The mandatory empty gap separating major sections */
+    margin-bottom: 80px; 
 }
 
 .project-card {
-    margin-bottom: 50px; /* Spacing between individual projects */
+    margin-bottom: 50px; 
 }
 
 .project-card:last-child {
     margin-bottom: 0;
 }
 
-/* 7. Mobile Responsiveness */
 @media (max-width: 768px) {
     body {
-        padding: 40px 15px; /* Reduces padding slightly for smaller screens */
+        padding: 40px 15px;
     }
     
     h1 {
-        font-size: 2rem; /* Scales down the main header for mobile */
+        font-size: 2rem; 
     }
 
     header#hero,
     main#projects,
     footer#contact {
-        margin-bottom: 60px; /* Adjusts the section gaps for mobile screens */
+        margin-bottom: 60px;
     }
 }

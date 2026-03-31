@@ -44,4 +44,4 @@ OUT:
 
 - [ ] The live site passes the mobile responsive check on an actual smartphone.
 
-- Completion evidence: A live, shareable URL (your .github.io address) that hosts the finished portfolio website, ready to be sent directly to recruiters.
+- Completion evidence: A live, shareable URL that hosts the finished portfolio website, ready to be sent directly to recruiters.

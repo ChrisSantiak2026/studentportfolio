@@ -38,5 +38,5 @@ OUT:
 - [ ] Structure matches plan
 
 ## Completion Evidence
-- Screenshot of page
+- Screenshot of page 
 - Git commit created
